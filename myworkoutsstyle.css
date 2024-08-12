@@ -1,0 +1,180 @@
+body {
+    background-color: #CBC3E3;
+    margin: 0;
+    padding: 10px;
+}
+
+#navmenu {
+    position: absolute;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    top: 0;
+    right: 0;
+    padding: 15px;
+    color: #36454F;   
+}
+
+#navmenu a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 5px;
+    display: block;
+    color: #36454F;
+}
+
+#navleft {
+    position: absolute;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    top: 0;
+    right: left;
+    padding: 15px;
+    color: #36454F;  
+}
+
+#navleft a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-size: 12px; */
+    display: block;
+    color: #36454F;
+}
+
+#welcome {
+    color: #36454F;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-left: 145px;
+}
+
+.workout {
+    margin: 0 10px; /* adds 10px to left and right of each box */
+    font-family: Arial, Helvetica, sans-serif;
+    color: #36454F;
+    width: 300px;
+    height: 500px;
+    border: 5px solid white;
+    border-radius: 15px;
+    display: inline-block;
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.pulldownmenu {
+    width: 250px;
+    height: 35px;
+    display: inline-block;
+    justify-content: space-around;
+    border-radius: 15px;
+    background-color: #F0F0F0; 
+    border: 3px solid #D1D1D1;
+}
+
+.exercises {
+    margin: 0 auto;
+    width: 250px;
+    height: 400px;
+    border-radius: 15px;
+    background-color: #F0F0F0; 
+    border: 3px solid #D1D1D1;
+}
+
+.exercises ul {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+    list-style-type: none;
+}
+
+.exercises li {
+    margin-bottom: 8px;
+}
+
+#container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    height: 100vh; 
+}
+
+.gear {
+    position: absolute; /*position is absolute, but relative to the white workout boxes as a child to the workout box */ 
+    bottom: 8px;
+    right: 8px;
+    cursor: pointer;
+}
+
+p1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.plussign {
+    margin-top: 7px;
+    margin-left: 30px;
+    color: #36454F; 
+    font-size: 22px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.createnew {
+    margin-top: 20px;
+    margin-left: 10px;
+    text-decoration: none; 
+    cursor: pointer;
+}
+
+.createnew a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    color: #36454F;  
+}
+
+.menu {
+    display: none; /* hides menu as default until gear is clicked */
+    position: absolute; 
+    top: 485px; 
+    left: 310px;
+    background-color: #F0F0F0;  
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px; 
+    z-index: 1; /* pulls menu in front of the workout displays */ 
+}
+
+.menu.show {
+    display: block; /* Show the menu when the 'show' class is added */
+}
+
+.menu button {
+    width: 100%; 
+    margin-bottom: 5px;
+    border-radius: 5px; 
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #DCDCDC;
+}
+
+.renameworkout {
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+    color: #000; 
+    background-color: #fff; 
+    border: 1px solid #ccc; 
+    border-radius: 3px; 
+    box-sizing: border-box; 
+}

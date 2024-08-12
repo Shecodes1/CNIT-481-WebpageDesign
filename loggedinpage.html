@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+ <!-- source for dynamic calendar: https://www.geeksforgeeks.org/how-to-design-a-simple-calendar-using-javascript/  -->
+<html>
+    <head>
+        <title>
+            Logged Homepage
+        </title> 
+        <script src="https://kit.fontawesome.com/7b8c6df78e.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="loggedinstyle.css">
+        <script src="loggedinscript.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1 id="welcome">Welcome Back Megan!<h1>
+            <div id="navmenu">
+                <div>
+                    <i class="fa-solid fa-gear fa-2x"></i>
+                    <a href="url">Settings</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-user fa-2x"></i>
+                    <a href="..\Project 3\Homepage.html">Logout</a>
+                </div>
+            </div>
+        </header>
+        <div class="pagecontainer">
+            <div id="favoritessection">
+                <h2>Your Favorites:</h2>
+                <ul id="favoriteslist"></ul>
+            </div>
+            <div class="dynamiccalendar">
+                <div class="calendartitle">
+                    <p class="currentdate"></p>
+                </div>
+                <div class="calendarnav">
+                    <div class="previous">
+                         <i class="fa-solid fa-chevron-left"></i>
+                    </div>
+                    <div class="next">
+                         <i class="fa-solid fa-chevron-right"></i>
+                    </div>  
+                </div>
+                <div class="calendar"> 
+                    <ul class="weekdays">
+                        <li>Sun</li>
+                        <li>Mon</li>
+                        <li>Tue</li>
+                        <li>Wed</li>
+                        <li>Thu</li>
+                        <li>Fri</li>
+                        <li>Sat</li>
+                    </ul>
+                    <ul class = "days"></ul>   
+                </div>
+            </div>
+            <div class="container">
+                <ul id="navmenuright">
+                    <li><i class="fa-solid fa-heart fa-2x fa-fw"></i> <a href="#" id="showFavorites">Favorites</a></li>
+                    <li><i class="fa-solid fa-arrow-pointer fa-2x fa-fw"></i> <a href="..\Project 3\exerciseview.html">Browse</a></li>
+                    <li><i class="fa-solid fa-dumbbell fa-2x fa-fw"></i> <a href="..\Project 3\myworkouts.html">My Workouts</a></li>
+                    <li><i class="fa-solid fa-plus fa-2x fa-fw"></i> <a href="url">Create New Workout</a></li>
+                </ul>
+            </div>
+        </div> 
+    </body>
+</html>
+
+
